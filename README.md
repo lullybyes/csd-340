@@ -1,4 +1,4 @@
 # CSD 340 Web Development with HTML and CSS
 ## Contributors
-..* Professor Joseph Issa
-..* Lindsey Yin
+* Professor Joseph Issa
+* Lindsey Yin
