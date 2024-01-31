@@ -63,11 +63,15 @@ h1 {
 }
 
 .card-content a:hover {
-    background-color: tan;
+    color: gold;
 }
 
 .card-content a:visited {
     color: tan;
+}
+
+.card-content a:visited:hover {
+    color: gold;
 }
 
 .card:hover {
