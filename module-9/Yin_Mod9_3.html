@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+       var firstVariableValue = "Ni";
+       var secondVariableValue = "shrubbery";
+       var thirdVariableValue = "coconuts";
+       var fourthVariableValue = "rabbit";
+     </script>
+    <title>CSD 340 Development with HTML and CSS</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Assignment 9.3: Javascript - Part 1</h1>
+        <p> Scene: The Knights Who Say Ni </p>
+        <p> Sir Bedevere: What makes you think she's a witch? </p>
+        <p> Peasant: Well, she turned me into a <span id="Ni">_________</span>! </p>
+        <p>
+          <button type="button" onclick="document.getElementById('Ni').innerHTML = firstVariableValue">Ni</button> <br />   
+        </p> 
+   
+        <p> Scene: The Knights Who Say Ni </p>
+        <p> King Arthur: We have ridden the length and breadth of the land in search of knights who will join me in my court at Camelot. I must speak with your lord and master. </p>
+        <p> Peasant: What? Ridden on a horse? </p>
+        <p> King Arthur: Yes! </p>
+        <p> Peasant: You're using coconuts! </p>
+        <p> King Arthur: What? </p>
+        <p> Peasant: You've got two empty halves of <span id="coconuts">_________</span> and you're bangin' 'em together. </p>
+        <p>
+          <button type="button" onclick="document.getElementById('coconuts').innerHTML = thirdVariableValue">coconuts</button> <br />   
+        </p> 
+   
+        <p> Scene: The Knights Who Say Ni </p>
+        <p> King Arthur: Look, that rabbit's got a vicious streak a mile wide! It's a killer! </p>
+        <p> Sir Galahad: Get stuffed! </p>
+        <p> Tim: He'll do you up a treat, mate! </p>
+        <p> Rabbit: <span id="rabbit">_________</span> </p>
+        <p>
+          <button type="button" onclick="document.getElementById('rabbit').innerHTML = fourthVariableValue">rabbit</button> <br />   
+        </p> 
+      <hr />
+    </div>
+    <div class="last-div">
+      <a class="back-link" href="..\index.html">Back to Landing Page</a>
+    </div>
+  </body>
+</html>
