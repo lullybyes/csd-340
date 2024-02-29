@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link href="Yin_Mod12_2.css" type="text/css" rel="stylesheet">
+    <script>
+        // Define array of book titles
+        var bookTitles = [
+            "Lord of the Rings Series",
+            "The Lioness and Her Knight",
+            "The Savage Damsel and the Dwarf",
+            "The Princess, the Crone, and the Dung Cart Knight",
+            "The Ballad of Sir Dinadan",
+            "The Ranger’s Apprentice",
+            "Homeland",
+            "The Seventh Tower: The Fall",
+            "The Hobbit",
+            "Game of Thrones Series"
+        ];
+
+        // Function to display the array elements in ascending order
+        function displayTopToBottom() {
+            var bookList = document.getElementById("book-list");
+            bookList.innerHTML = ""; // Clear previous content
+            bookTitles.forEach(function(title, index) {
+                var listItem = document.createElement("li");
+                listItem.textContent = title;
+                bookList.appendChild(listItem);
+            });
+        }
+
+        // Function to display the array elements in descending order
+        function displayBottomToTop() {
+            var bookList = document.getElementById("book-list");
+            bookList.innerHTML = ""; // Clear previous content
+            for (var i = bookTitles.length - 1; i >= 0; i--) {
+                var listItem = document.createElement("li");
+                listItem.textContent = bookTitles[i];
+                bookList.appendChild(listItem);
+            }
+        }
+
+        // Display the list initially
+        window.onload = function() {
+            displayTopToBottom();
+        };
+    </script>
+</head>
+<body>
+<div id="container">
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>
+    <div class="split">
+        <h3>Top 10 Favorite Books</h3>
+        <ol id="book-list"></ol>
+        <button onclick="displayTopToBottom()">Top to Bottom</button>
+        <button onclick="displayBottomToTop()">Bottom to Top</button>
+    </div>
+    <div class="split">
+        <h3>5 Things I’ve Learned Since the Course Started</h3>
+        <ul>
+            <li>Peripheral vision is used more than central vision.</li>
+            <li>People remember only four things at once.</li>
+            <li>Most vivid memories are wrong.</li>
+            <li>I’ve learned the basics of building a web page.</li>
+            <li>I’ve learned to style web pages with CSS.</li>
+        </ul>
+    </div>
+</div>
+<div class="last-div">
+    <a class="back-link" href="..\index.html">Back to Landing Page</a>
+</div>
+</body>
+</html>
